@@ -1,7 +1,4 @@
-import os
-import random
-import time
-import requests
+os.system('clear')
 
 # Logo
 logo = """
@@ -23,7 +20,6 @@ logo = """
 """
 
 print(logo)
-os.system('clear')
 
 import os
 import random
