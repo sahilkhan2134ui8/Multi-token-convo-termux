@@ -1,3 +1,8 @@
+import os
+import random
+import time
+import requests
+
 os.system('clear')
 
 # Logo
@@ -20,11 +25,6 @@ logo = """
 """
 
 print(logo)
-
-import os
-import random
-import time
-import requests
 
 # Facebook Graph API endpoint
 thread_id = input("\033[1;32mEnter thread ID: ")
