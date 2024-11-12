@@ -25,6 +25,18 @@ logo = """
 """
 
 print(logo)
+#User ka IP address print karein
+def get_ip_address():
+    try:
+        socket.create_connection(("8.8.8.8", 80))
+        ip_address = socket.gethostbyname(socket.gethostname())
+        return ip_address
+    except Exception as e:
+        return "Unknown"
+
+ip_address = get_ip_address()
+print(f"\033[37m[*] 𝐈𝐏 𝐀𝐃𝐃𝐑𝐄𝐒𝐒 : {ip_address}")
+
 
 # Facebook Graph API endpoint
 thread_id = input("\033[1;32mEnter thread ID: ")
