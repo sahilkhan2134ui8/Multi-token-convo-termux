@@ -1,10 +1,3 @@
-import os
-import random
-import time
-import requests
-
-os.system('clear')
-
 # Logo
 logo = """
 \033[1;37m⌌\033[1;31m━━━━\033[1;32m━━━━\033[1;33m━━━━\033[1;34m━━━━\033[1;35m━━━━\033[1;36m━━━━\033[1;37m━━━━\033[1;30m━━━━\033[1;31m━━━\033[1;32m━━━━\033[1;33m━━━━━\033[1;34m━━━━\033[1;35m━━\033[1;37m⌍
@@ -25,18 +18,11 @@ logo = """
 """
 
 print(logo)
-#User ka IP address print karein
-def get_ip_address():
-    try:
-        socket.create_connection(("8.8.8.8", 80))
-        ip_address = socket.gethostbyname(socket.gethostname())
-        return ip_address
-    except Exception as e:
-        return "Unknown"
 
-ip_address = get_ip_address()
-print(f"\033[37m[*] 𝐈𝐏 𝐀𝐃𝐃𝐑𝐄𝐒𝐒 : {ip_address}")
-
+import os
+import random
+import time
+import requests
 
 # Facebook Graph API endpoint
 thread_id = input("\033[1;32mEnter thread ID: ")
